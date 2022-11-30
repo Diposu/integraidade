@@ -19,7 +19,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    height: 84px;
+    height: 90px;
     max-width: 1040px;
   }
 
@@ -34,7 +34,8 @@ body {
 }
 
 .inicio{
-    padding-bottom: 400px;
+    padding-bottom: 200px;
+    margin-right: 120px;
 }
 .inicio-titulo{
     position: relative;
@@ -169,30 +170,111 @@ body {
 
 }
 
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-.mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
+@media (max-width: 999px) {
+    body {
+      overflow-x:hidden;
+      padding: auto;
+    }
+    
+    
+    
+    .nav-list{
+        position: relative;
+        display: flex;
+        flex-grow: 0;
+        flex-basis: auto;
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 50px;
+        right: auto;
+    }
+
+    .inicio {
+        flex-direction: column-reverse;
+        margin: auto;
+        padding: auto;
+        padding-bottom: 400px;
+        padding-right: 10px ;
+    }
+    .inicio-titulo{
+        position: relative;
+        top: 600px;
+        left: 5px;
+    }
+    .inicio-titulo h1 {
+        font-size: 25px;
+        min-width: 328px;
+
+    }
+
+    .inicio h2 {
+        position: relative;
+        bottom: 50px;
+        font-size: 18px;
+    }
+
+    .inicio img {
+        display: flex;
+        justify-content: end;
+        width: 276.24px;
+        left:auto;
+        left: 40px;
+        top: 30px;
+
+    }
+    .botao-pesquisa{
+        position: relative;
+        right: auto;
+        top: 300px  ;
+    }
+
+    .card-all-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        align-items: center;
+    }
+    .card-all-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        align-items: center;
+    }
+
+
+    .div-titulo {
+        padding: 50px 0 70px 0;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    } 
+    .sobre{
+        margin: auto;
+    }
+    .imgs-rodape{
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        align-items: center
+    }
+
+    .servico{
+        margin-top: -200px ;
+    }
+
+    .contato{
+        margin-top: -300px;
+        margin-bottom: 30px;
+    }
+
+}
